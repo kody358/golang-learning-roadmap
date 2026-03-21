@@ -8,7 +8,11 @@ roadmap.sh の Go言語ロードマップ（`golang.pdf`参照）に沿った学
 
 ## ディレクトリ構成
 
-`01_introduction/` から `14_advanced/` まで番号順に並び、各ディレクトリ内にトピック別のサブディレクトリがある。各トピックには実行可能な `main.go` や `*_test.go` を配置する。
+`01_introduction/` から `14_advanced/` まで番号順に並び、各ディレクトリ内にトピック別のサブディレクトリがある。
+
+- 各トピックは独立したサブディレクトリに分ける（例: `02_language_basics/const_iota/`, `02_language_basics/scope_shadowing/`）
+- 各サブディレクトリに `package main` の `main.go` を置き、`go run` で単独実行できるようにする
+- 1つのサブディレクトリに複数トピックを混ぜない
 
 ## コマンド
 
