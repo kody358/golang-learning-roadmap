@@ -13,6 +13,9 @@ roadmap.sh の Go言語ロードマップ（`golang.pdf`参照）に沿った学
 - 各トピックは独立したサブディレクトリに分ける（例: `02_language_basics/const_iota/`, `02_language_basics/scope_shadowing/`）
 - 各サブディレクトリに `package main` の `main.go` を置き、`go run` で単独実行できるようにする
 - 1つのサブディレクトリに複数トピックを混ぜない
+- Claudeが作成する `main.go` は参考コード。ユーザーが練習用コードを書くために各トピックディレクトリ内に `practice/` サブディレクトリを作成する
+  - 例: `02_language_basics/const_iota/practice/main.go`
+  - `practice/` も `package main` で `go run` で単独実行できるようにする
 
 ## コマンド
 
