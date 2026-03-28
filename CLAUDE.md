@@ -8,7 +8,25 @@ roadmap.sh の Go言語ロードマップ（`golang.pdf`参照）に沿った学
 
 ## ディレクトリ構成
 
-`01_introduction/` から `14_advanced/` まで番号順に並び、各ディレクトリ内にトピック別のサブディレクトリがある。
+`01_introduction/` から `16_advanced/` まで番号順に並び、各ディレクトリ内にトピック別のサブディレクトリがある。
+PDFのロードマップに対応する番号は以下の通り:
+
+1. Introduction to Go
+2. Language Basics (Variables & Constants, Data Types)
+3. Composite Types (Arrays, Slices, Strings, Maps, Structs)
+4. Control Flow (Conditionals, Loops)
+5. Functions
+6. Pointers
+7. Methods and Interfaces
+8. Generics
+9. Error Handling
+10. Code Organization
+11. Concurrency
+12. Standard Library
+13. Testing & Benchmarking
+14. Ecosystem & Popular Libraries
+15. Go Toolchain and Tools
+16. Advanced Topics
 
 - 各トピックは独立したサブディレクトリに分ける（例: `02_language_basics/const_iota/`, `02_language_basics/scope_shadowing/`）
 - 各サブディレクトリに `package main` の `main.go` を置き、`go run` で単独実行できるようにする
@@ -21,16 +39,16 @@ roadmap.sh の Go言語ロードマップ（`golang.pdf`参照）に沿った学
 
 ```bash
 # 特定の例を実行
-go run ./03_control_flow/loops/main.go
+go run ./03_composite_types/slices/main.go
 
 # 特定トピックのテスト実行
-go test ./11_testing/table_driven/...
+go test ./13_testing/table_driven/...
 
 # 全テスト実行
 go test ./...
 
 # ベンチマーク実行
-go test -bench=. ./11_testing/benchmarks/...
+go test -bench=. ./13_testing/benchmarks/...
 
 # コードフォーマット
 go fmt ./...
